@@ -16,8 +16,11 @@ html(lang='en')
         script(src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900' rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i' rel='stylesheet')
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        //link(href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900' rel='stylesheet')
+        //link(href='https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap' rel='stylesheet')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
@@ -27,39 +30,50 @@ html(lang='en')
         // Navigation
         nav.navbar.navbar-expand-lg.navbar-dark.navbar-custom.fixed-top
             .container.px-5
-                a.navbar-brand(href='#page-top') oscill.ai
+                img(src='assets/img/octopus_icon.png' alt='...', style={'height': '3rem', 'margin-right': '1rem'})
+                a.navbar-brand.text-dark(href='#page-top') oscill.ai
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item
-                            a.nav-link(href='#home') Home
+                            a.nav-link.text-secondary(href='#home') Home
                         li.nav-item
-                            a.nav-link(href='#services') Services
+                            a.nav-link.text-secondary(href='#services') Services
                         li.nav-item
-                            a.nav-link(href='#about-us') About us
+                            a.nav-link.text-secondary(href='#about-us') About us
                         li.nav-item
-                            a.nav-link(href='#contact') Contact
+                            a.nav-link.text-secondary(href='#contact') Contact
 
         // Header
-        header.masthead.text-center.text-white#home
-            .masthead-content
-                .container.px-5
-                    h1.masthead-heading.mb-0 High-quality audio tools
-                    h2.masthead-subheading.mb-0 Made smarter
-                    p.mx-auto.col-md-6.col-lg-3
-                        | Looking for AI-enabled magic, but don’t know where to start?
-                        br
-                        br
-                        | Already using AI but want to get to the next level ?
-                        br
-                        br
-                        | Whether you need an off-the-shelf or a tailor-made solution, we’ve got you covered.
-                    a.btn.btn-primary.btn-xl.rounded-pill.mt-5(href='#contact') Get in touch!
-            .bg-circle-1.bg-circle
-            .bg-circle-2.bg-circle
-            .bg-circle-3.bg-circle
-            .bg-circle-4.bg-circle
+        section#home
+            .container.px-5
+                div(style={'margin-top': '10rem', 'margin-bottom': '.5rem'}).px-5.text-center
+                    h1.masthead-subheading.mb-0.display-3 High-quality audio tools
+                .px-5
+                    header.masthead.text-center.text-white(style={
+                        'background-image': "url('assets/img/waveform_cropped_resized_gray_opacity40.png')",
+                        'background-blend-mode': 'overlay'
+                    })
+                        .masthead-content
+                            .container.px-5
+                                h2.masthead-heading.mb-0 Made smarter
+                                br
+                                h3.display-4 We are oscill.ai
+                                p.mx-auto.col-md-6.col-lg-3
+                                    | Looking for AI-enabled magic, but don’t know where to start?
+                                    br
+                                    br
+                                    | Already using AI but want to get to the next level ?
+                                    br
+                                    br
+                                    | Whether you need an off-the-shelf or a tailor-made solution, we’ve got you covered.
+                        //.bg-circle-1.bg-circle
+                        //.bg-circle-2.bg-circle
+                        //.bg-circle-3.bg-circle
+                        //.bg-circle-4.bg-circle
+                div(style={'margin-top': '2rem', 'margin-bottom': '6rem'}).px-5.text-center
+                    a.btn.btn-secondary.btn-xl.rounded-pill.mt-5(href='#contact') Get in touch!
 
         // Content section 1
         section.text-lg-center#services
