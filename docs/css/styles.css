@@ -11460,15 +11460,19 @@ header.masthead .bg-circle-4 {
 }
 
 @media (min-width: 992px) {
-  header.masthead {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   header.masthead .masthead-content .masthead-heading {
     font-size: 5rem;
   }
   header.masthead .masthead-content .masthead-subheading {
     font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 3rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 1.5rem;
   }
 }
 section.tritext {
@@ -11643,5 +11647,47 @@ section.tritext .tri-bg-circle {
   }
   100% {
     transform: translateX(0%);
+  }
+}
+.navbar-logo {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 2rem;
+    margin-right: -1rem;
+  }
+}
+.div-top-margin {
+  margin-top: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .div-top-margin {
+    margin-top: 7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.div-get-in-touch {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 576px) {
+  .div-get-in-touch {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+.custom-margin-bottom {
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 576px) {
+  .custom-margin-bottom {
+    margin-bottom: 3rem;
   }
 }

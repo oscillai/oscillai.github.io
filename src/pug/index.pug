@@ -28,12 +28,14 @@ html(lang='en')
     body#page-top
 
         // Navigation
-        nav.navbar.navbar-expand-lg.navbar-dark.navbar-custom.fixed-top
+        nav.navbar.navbar-expand-lg.navbar-light.navbar-custom.fixed-top
             .container.px-5
                 a(href='#top')
-                    img(src='assets/img/octopus_icon.png' alt='...', style={'height': '3rem', 'margin-right': '1rem'})
+                    img.navbar-logo(src='assets/img/octopus_icon.png' alt='...')
                 a.navbar-brand.text-dark(href='#top') oscill.ai
-                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive',
+                                      aria-controls='navbarResponsive', aria-expanded='false',
+                                      aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
@@ -48,16 +50,16 @@ html(lang='en')
 
         // Header
         section#home
-            .container.px-5
-                div(style={'margin-top': '10rem', 'margin-bottom': '.5rem'}).px-5.text-center
+            .container.px-sm-5
+                div.div-top-margin.px-sm-5.text-center
                     h1.masthead-subheading.mb-0.display-3 High-quality audio tools
-                .px-5
+                .px-sm-5
                     header.masthead.text-center.text-white(style={
                         'background-image': "url('assets/img/waveform_cropped_resized_gray_opacity40.png')",
                         'background-blend-mode': 'overlay'
                     })
                         .masthead-content
-                            .container.px-5
+                            .container.px-sm-5
                                 h2.mb-0
                                     span.masthead-heading.display-3 made
                                     span.masthead-heading.highlight.ms-2 smarter
@@ -76,7 +78,7 @@ html(lang='en')
                         //.bg-circle-2.bg-circle
                         //.bg-circle-3.bg-circle
                         //.bg-circle-4.bg-circle
-                div(style={'margin-top': '2rem', 'margin-bottom': '6rem'}).px-5.text-center
+                div.div-get-in-touch.px-sm-5.text-center
                     a.btn.btn-secondary.btn-xl.rounded-pill.mt-5(href='#contact') Get in touch!
 
         // Section services
@@ -89,13 +91,10 @@ html(lang='en')
             .tritext-content
                 // Content section 1
                 section.text-lg-center
-                    .container.px-5
-                        .row.gx-5.align-items-center
-                            //.col-lg-6.order-lg-2
-                                .p-5
-                                    img.img-fluid.rounded-circle(src='assets/img/01.jpg', alt='...')
+                    .container.px-sm-5
+                        .row.gx-sm-5.align-items-center
                             .col-lg-6.col-xxl-5.mx-auto
-                                .p-5
+                                .px-sm-5.py-5
                                     h2.display-4 Industry-standard
                                     p
                                         | We create plugins with modern interfaces and innovative audio processing, ready for commercial release.
@@ -110,11 +109,11 @@ html(lang='en')
 
                 // Content section 2
                 section
-                    .container.px-5
-                        .row.gx-5.align-items-center
+                    .container.px-sm-5
+                        .row.gx-sm-5.align-items-center
                             .d-none.d-xxl-block.col-xxl-2.order-2
                             .col-lg-6.col-xxl-5.order-1
-                                .p-5
+                                .px-sm-5.py-5
                                     h2.display-4 ...for everyone
                                     p
                                         | We believe AI is a game-changer when used in the right place.
@@ -127,7 +126,7 @@ html(lang='en')
                                         span.highlight-bold-dark artistic
                                         | creativity.
                             .col-lg-6.col-xxl-5.order-3
-                                .p-5
+                                .px-sm-5.py-5
                                     h2.display-4 ...pushed to the edge
                                     p
                                         | From decades on, cutting-edge technology has fueled the creativity of the pioneers, shaping the history of music.
@@ -154,13 +153,13 @@ html(lang='en')
 
         // Content section 3
         section
-            .container.px-5.pt-5.pt-lg-0(style={'margin-top': '0rem', 'margin-bottom': '6rem'})
-                .row.gx-5.align-items-center.pt-5.pt-lg-0
+            .container.px-sm-5.pt-2.pt-sm-5.pt-lg-0.mt-0.custom-margin-bottom
+                .row.gx-sm-5.align-items-center.pt-5.pt-lg-0
                     .col-lg-5.order-lg-1
-                        .p-5.pb-0.p-lg-5.col-6.col-lg-12.mx-auto
+                        .p-sm-5.pb-0.p-lg-5.col-6.col-lg-12.mx-auto
                             img.img-fluid(src='assets/img/octopus_transparent_fit_to_content.png', alt='...')
                     .col-lg-7.order-lg-2
-                        .p-5
+                        .px-sm-5.py-5
                             //h2.display-4 Title?
                             p
                                 span(style={'font-weight': '700'}) Wonder what we can do for you ?
@@ -180,28 +179,28 @@ html(lang='en')
 
         // Content section 4
         section#about-us
-            .container.px-5.bg-primary.text-light
-                .p-5
+            .container.px-sm-5.bg-primary.text-light
+                .px-sm-5.py-5
                     .text-lg-center
                         h2.display-4 We help you navigate this AI world!
                 // TODO (@dcarnino): group elements by row to have them aligned horizontally
-                .row.gx-5.align-items-center
+                .row.gx-sm-5.align-items-center
                     .d-none.d-xxl-block.col-xxl-2.order-2
                     .col-lg-6.col-xxl-5.order-1
                         .ps-lg-5
-                            .text-center.text-lg-start.col-6.col-lg-12
+                            .text-center.text-lg-start.col-sm-6.col-lg-12
                                 img.img-fluid.rounded-circle.col-8(src='assets/img/remi_dugue_pp.jpg', alt='...')
-                        .p-5
+                        .py-4.p-sm-5
                             .text-lg-start
                                 h2.display-6 Rémi Dugué
                                 h4.highlight-bold Co-founder, DSP guru
                                 p
                                     | Rémi has an MSc in Electronics and Signal Processing. He has been working in the audio industry for many years now, releasing dozens of commercial plugins. Besides that, he is the guitarist and frontman of various rock bands. He draws his inspiration from guitar pedals, modular synthesizers and creative recording techniques. His dream is to bring new kind of interactivity as well as fresh and exciting sounds to the software world.
                     .col-lg-6.col-xxl-5.order-3
-                        .pe-lg-5
-                            .text-center.text-lg-end.col-6.col-lg-12
+                        .pt-5.pt-sm-0.pe-lg-5
+                            .text-center.text-lg-end.col-sm-6.col-lg-12
                                 img.img-fluid.rounded-circle.col-8(src='assets/img/denis_carnino_pp.jpg', alt='...')
-                        .p-5
+                        .pt-4.pb-5.p-sm-5
                             .text-lg-end
                                 h2.display-6 Denis Carnino
                                 h4.highlight-bold Co-founder, AI evangelist
@@ -243,7 +242,10 @@ html(lang='en')
         footer.py-5
             .container.px-5
                 p.m-0.text-center.text-muted.small
-                    | Copyright &copy; oscill.ai 2023 // octopus by
+                    | Copyright &copy; oscill.ai 2023
+                    span.d-inline.d-sm-none
+                        br
+                    | // octopus by
                     a(href='https://juliaromrom.fr/', target='_blank', style={'text-decoration': 'none'}) Julia Romrom
 
         // Bootstrap core JS

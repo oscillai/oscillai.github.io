@@ -1,0 +1,51 @@
+//
+// Misc classes
+//
+
+.navbar-logo {
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 2rem;
+        margin-right: -1rem;
+    }
+}
+
+
+.div-top-margin {
+    margin-top: 10rem;
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 576px) {
+    .div-top-margin {
+        margin-top: 7rem;
+        margin-bottom: .5rem;
+    }
+}
+
+
+.div-get-in-touch {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 576px) {
+    .div-get-in-touch {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.custom-margin-bottom {
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 576px) {
+    .custom-margin-bottom {
+        margin-bottom: 3rem;
+    }
+}

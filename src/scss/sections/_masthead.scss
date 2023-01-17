@@ -65,8 +65,6 @@ header.masthead {
 
 @media (min-width: 992px) {
     header.masthead {
-        padding-top: 0;//calc(10rem + 55px);
-        padding-bottom: 0;//10rem;
 
         .masthead-content {
             .masthead-heading {
@@ -80,203 +78,17 @@ header.masthead {
     }
 }
 
+@media (max-width: 576px) {
+    header.masthead {
 
+        .masthead-content {
+            .masthead-heading {
+                font-size: 3rem;
+            }
 
-//
-// Background circle neural octopus
-//
-
-section.tritext {
-    position: relative;
-    overflow: hidden;
-    padding-top: 0;//calc(7rem + 72px);
-    padding-bottom: 0;//7rem;
-    //background: $primary;//linear-gradient(0deg, $secondary 0%, $primary 100%);
-    //background-image: url('assets/img/waveform_cropped_resized_gray.png');
-    //background-repeat: no-repeat;
-    //background-position: center center;
-    //background-attachment: scroll;
-    //background-size: cover;
-
-    .tritext-content {
-        z-index: 1;
-        position: relative;
-
-        .tritext-heading {
-            font-size: 4rem;
-        }
-
-        .tritext-subheading {
-            font-size: 2rem;
+            .masthead-subheading {
+                font-size: 1.5rem;
+            }
         }
     }
-
-    .tri-bg-circle {
-        z-index: 0;
-        position: absolute;
-        height: 0;
-        width: 40%;
-        padding-bottom: 40%;
-        border-radius: 50%;
-        background-color: $success;
-        opacity: 10%;
-        left: 30%;
-        top: 33%;
-    }
 }
-
-
-@media (min-width: 1200px) {
-    section.tritext {
-
-        .tri-bg-circle {
-            width: 36%;
-            padding-bottom: 36%;
-            left: 32%;
-            top: 28%;
-        }
-
-    }
-}
-
-
-@media (min-width: 1400px) {
-    section.tritext {
-
-        .tri-bg-circle {
-            width: 34%;
-            padding-bottom: 34%;
-            left: 33%;
-            top: 26%;
-        }
-
-    }
-}
-
-
-@media (min-width: 1600px) {
-    section.tritext {
-
-        .tri-bg-circle {
-            width: 32%;
-            padding-bottom: 32%;
-            left: 34%;
-            top: 23%;
-        }
-
-    }
-}
-
-
-
-//
-// Sine wave: from https://codepen.io/diessica/pen/ngzERQ
-//
-
-// visual variables
-$bodybg: $white;
-$wavecolor: $success;
-$showingtime: 4s; // 2s is fun, try :D
-  
-// relevant variables
-$angle: 48;//38.43;
-$increasemargin: -89.75px;
-$thick: 5.7px;
-  
-// relevant
-//.div {
-//    display: inline-block;
-//}
- 
-.curve {
-    margin-bottom: 110px;
-}
- 
-.linear {
-    animation: linearmov 8s linear infinite alternate;
-}
-.perspective {
-    transform: perspective(600px) rotateY(26deg);
-}
-.showing
-  
-.increase, .decrease {
-    height: $thick - 0.3px;
-    background: $wavecolor;
-    width: #{0.8*$angle}px;//#{3.9*$angle}px;
-    margin-left: $increasemargin;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-}
-.increase {
-    transform: rotate(-#{$angle}deg);
-}
-.decrease {
-    transform: rotate(#{$angle}deg) translate(-56px, -102.5px);
-    margin-left: $increasemargin + 1.5;
-}
-
-.incr {
-    height: $thick - 0.3px;
-    background: $wavecolor;
-    width: #{0.8*$angle}px;//#{3.9*$angle}px;
-    margin-left: $increasemargin + 31.3;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    transform: rotate(-#{$angle}deg) translate(97.5px, -55.8px);
-}
-  
-.peak, .valley {
-    border: $thick solid $bodybg;
-    border-top: $thick solid $wavecolor;
-    border-radius: 50%;
-    width: 140px;
-    height: 200px;//105px;
-    display: inline-block;
-}
-.peak {
-    transform: translate(-13px, 47.65px);//-44px, = +31px = +21.9 in each diagonal
-}
-.valley {
-    transform: rotate(180deg) translate(-2.1px, 73px);
-}
-
-// page + movements + extra transforms  
-.showing {
-    float: left;
-    background: $bodybg;
-    width: 100%;
-    height: 200px;
-    animation: showing $showingtime linear infinite alternate;
-    position: relative;
-    z-index: 2;
-}
-    
-@keyframes linearmov {
-    0% {
-        transform: translateX(0);
-        perspective: 300px;
-    }
-    50% {
-        transform: translateX(-1030px);
-    }
-    100% {
-        transform: translateX(0);
-        perspective: 300px;
-    }
-}
-
-@keyframes showing {
-    0% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(105%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-

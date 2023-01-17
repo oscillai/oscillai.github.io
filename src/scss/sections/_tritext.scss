@@ -1,0 +1,84 @@
+//
+// Background circle neural octopus
+//
+
+section.tritext {
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;//calc(7rem + 72px);
+    padding-bottom: 0;//7rem;
+    //background: $primary;//linear-gradient(0deg, $secondary 0%, $primary 100%);
+    //background-image: url('assets/img/waveform_cropped_resized_gray.png');
+    //background-repeat: no-repeat;
+    //background-position: center center;
+    //background-attachment: scroll;
+    //background-size: cover;
+
+    .tritext-content {
+        z-index: 1;
+        position: relative;
+
+        .tritext-heading {
+            font-size: 4rem;
+        }
+
+        .tritext-subheading {
+            font-size: 2rem;
+        }
+    }
+
+    .tri-bg-circle {
+        z-index: 0;
+        position: absolute;
+        height: 0;
+        width: 40%;
+        padding-bottom: 40%;
+        border-radius: 50%;
+        background-color: $success;
+        opacity: 10%;
+        left: 30%;
+        top: 33%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    section.tritext {
+
+        .tri-bg-circle {
+            width: 36%;
+            padding-bottom: 36%;
+            left: 32%;
+            top: 28%;
+        }
+
+    }
+}
+
+
+@media (min-width: 1400px) {
+    section.tritext {
+
+        .tri-bg-circle {
+            width: 34%;
+            padding-bottom: 34%;
+            left: 33%;
+            top: 26%;
+        }
+
+    }
+}
+
+
+@media (min-width: 1600px) {
+    section.tritext {
+
+        .tri-bg-circle {
+            width: 32%;
+            padding-bottom: 32%;
+            left: 34%;
+            top: 23%;
+        }
+
+    }
+}
