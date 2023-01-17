@@ -15,3 +15,25 @@ $headings-font-family: "Roboto Flex", system-ui, -apple-system, BlinkMacSystemFo
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $headings-font-weight: 800;
+
+$font-size-base: 1.1rem;
+
+.highlight {
+    color: $success;
+}
+
+.highlight-bold {
+    @extend .highlight;
+
+    font-weight: 500;
+}
+
+.highlight-dark {
+    color: $dark-success;
+}
+
+.highlight-bold-dark {
+    @extend .highlight-bold;
+
+    font-weight: 500;
+}

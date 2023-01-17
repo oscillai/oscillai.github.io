@@ -4,15 +4,33 @@
 
 // Override Bootstrap color system
 
+/*// V1 no consistency
 $yellow: #f0d496;
 $blue: #3891a6;
-$indigo: #a199a9;
+$indigo: #a199a9;*/
+
+/*// V2 flashy dark (https://paletton.com/#uid=30X0u0krjvCg+GXmbzWvnqWyJlb)
+$yellow: #fcb425;
+$blue: #169797;
+$indigo: #492aad;*/
+
+/*// V3 = V2 more pastel
+$yellow: #ffc44e;
+$blue: #33a6a6;
+$indigo: #6348b9;*/
+
+// V1 with indigo
+$yellow: #f0d496;
+$blue: #a199a9;
+$indigo: #72e1d1;
+$dark-indigo: #2bb09e;
 
 // Override Bootstrap default state colors
 
 $primary: $blue;
 $secondary: $yellow;
 $success: $indigo;
+$dark-success: $dark-indigo;
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
