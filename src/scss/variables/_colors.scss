@@ -19,18 +19,25 @@ $yellow: #ffc44e;
 $blue: #33a6a6;
 $indigo: #6348b9;*/
 
-// V1 with indigo
+/*// V1 with teal
 $yellow: #f0d496;
 $blue: #a199a9;
-$indigo: #72e1d1;
-$dark-indigo: #2bb09e;
+$teal: #72e1d1;
+$dark-teal: #2bb09e;*/
+
+// V1 with more contrast teal
+$yellow: #f0d496;
+$blue: #a199a9;
+$teal: #72e1d1;
+$light-teal: #a1f1e6;
+$dark-teal: #2bb09e;
 
 // Override Bootstrap default state colors
 
 $primary: $blue;
 $secondary: $yellow;
-$success: $indigo;
-$dark-success: $dark-indigo;
+$success: $light-teal;
+$info: $dark-teal;
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast

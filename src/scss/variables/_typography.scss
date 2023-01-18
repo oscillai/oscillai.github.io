@@ -29,11 +29,21 @@ $font-size-base: 1.1rem;
 }
 
 .highlight-dark {
-    color: $dark-success;
+    color: $info;
 }
 
 .highlight-bold-dark {
     @extend .highlight-bold;
 
-    font-weight: 500;
+    color: $info;
+}
+
+.oscillai-font {
+    font-family: $font-family-base;
+}
+
+.smarter-font {
+    @extend .oscillai-font;
+    
+    font-weight: 600;
 }
